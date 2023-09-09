@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct oddvarApp: App {
+struct OddvarApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WelcomeView(environment: .init(apiClient: .live(baseURL: Constants.baseURL)))
         }
     }
 }

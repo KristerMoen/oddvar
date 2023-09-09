@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7CB7C7DA2AABB86F00920ECC /* oddvarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB7C7D92AABB86F00920ECC /* oddvarApp.swift */; };
-		7CB7C7DC2AABB86F00920ECC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB7C7DB2AABB86F00920ECC /* ContentView.swift */; };
+		7CB7C7DA2AABB86F00920ECC /* OddvarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB7C7D92AABB86F00920ECC /* OddvarApp.swift */; };
+		7CB7C7DC2AABB86F00920ECC /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB7C7DB2AABB86F00920ECC /* ItemListView.swift */; };
 		7CB7C7DE2AABB87000920ECC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB7C7DD2AABB87000920ECC /* Assets.xcassets */; };
 		7CB7C7E12AABB87000920ECC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB7C7E02AABB87000920ECC /* Preview Assets.xcassets */; };
 		7CB7C7EB2AABB87000920ECC /* oddvarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB7C7EA2AABB87000920ECC /* oddvarTests.swift */; };
 		7CB7C7F52AABB87000920ECC /* oddvarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB7C7F42AABB87000920ECC /* oddvarUITests.swift */; };
 		7CB7C7F72AABB87000920ECC /* oddvarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB7C7F62AABB87000920ECC /* oddvarUITestsLaunchTests.swift */; };
+		7CB7C8062AABB9ED00920ECC /* OddvarApi in Frameworks */ = {isa = PBXBuildFile; productRef = 7CB7C8052AABB9ED00920ECC /* OddvarApi */; };
+		7CB7C8082AABBB7600920ECC /* DepenencyEnviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB7C8072AABBB7600920ECC /* DepenencyEnviroment.swift */; };
+		7CB7C80C2AABBF5600920ECC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB7C80B2AABBF5600920ECC /* Constants.swift */; };
+		7CB7C80E2AABD81200920ECC /* ItemCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB7C80D2AABD81200920ECC /* ItemCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +39,8 @@
 
 /* Begin PBXFileReference section */
 		7CB7C7D62AABB86F00920ECC /* oddvar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oddvar.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7CB7C7D92AABB86F00920ECC /* oddvarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oddvarApp.swift; sourceTree = "<group>"; };
-		7CB7C7DB2AABB86F00920ECC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7CB7C7D92AABB86F00920ECC /* OddvarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddvarApp.swift; sourceTree = "<group>"; };
+		7CB7C7DB2AABB86F00920ECC /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
 		7CB7C7DD2AABB87000920ECC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CB7C7E02AABB87000920ECC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7CB7C7E62AABB87000920ECC /* oddvarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = oddvarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +48,10 @@
 		7CB7C7F02AABB87000920ECC /* oddvarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = oddvarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CB7C7F42AABB87000920ECC /* oddvarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oddvarUITests.swift; sourceTree = "<group>"; };
 		7CB7C7F62AABB87000920ECC /* oddvarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oddvarUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7CB7C8032AABB9B900920ECC /* OddvarApi */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = OddvarApi; path = ../OddvarApi; sourceTree = "<group>"; };
+		7CB7C8072AABBB7600920ECC /* DepenencyEnviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepenencyEnviroment.swift; sourceTree = "<group>"; };
+		7CB7C80B2AABBF5600920ECC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7CB7C80D2AABD81200920ECC /* ItemCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CB7C8062AABB9ED00920ECC /* OddvarApi in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,10 +83,12 @@
 		7CB7C7CD2AABB86F00920ECC = {
 			isa = PBXGroup;
 			children = (
+				7CB7C8032AABB9B900920ECC /* OddvarApi */,
 				7CB7C7D82AABB86F00920ECC /* oddvar */,
 				7CB7C7E92AABB87000920ECC /* oddvarTests */,
 				7CB7C7F32AABB87000920ECC /* oddvarUITests */,
 				7CB7C7D72AABB86F00920ECC /* Products */,
+				7CB7C8042AABB9ED00920ECC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,9 +105,9 @@
 		7CB7C7D82AABB86F00920ECC /* oddvar */ = {
 			isa = PBXGroup;
 			children = (
-				7CB7C7D92AABB86F00920ECC /* oddvarApp.swift */,
-				7CB7C7DB2AABB86F00920ECC /* ContentView.swift */,
-				7CB7C7DD2AABB87000920ECC /* Assets.xcassets */,
+				7CB7C7D92AABB86F00920ECC /* OddvarApp.swift */,
+				7CB7C8092AABBEA500920ECC /* Views */,
+				7CB7C80A2AABBF4400920ECC /* Resources */,
 				7CB7C7DF2AABB87000920ECC /* Preview Content */,
 			);
 			path = oddvar;
@@ -127,6 +138,32 @@
 			path = oddvarUITests;
 			sourceTree = "<group>";
 		};
+		7CB7C8042AABB9ED00920ECC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7CB7C8092AABBEA500920ECC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7CB7C7DB2AABB86F00920ECC /* ItemListView.swift */,
+				7CB7C80D2AABD81200920ECC /* ItemCardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7CB7C80A2AABBF4400920ECC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7CB7C7DD2AABB87000920ECC /* Assets.xcassets */,
+				7CB7C8072AABBB7600920ECC /* DepenencyEnviroment.swift */,
+				7CB7C80B2AABBF5600920ECC /* Constants.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +180,9 @@
 			dependencies = (
 			);
 			name = oddvar;
+			packageProductDependencies = (
+				7CB7C8052AABB9ED00920ECC /* OddvarApi */,
+			);
 			productName = oddvar;
 			productReference = 7CB7C7D62AABB86F00920ECC /* oddvar.app */;
 			productType = "com.apple.product-type.application";
@@ -257,8 +297,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CB7C7DC2AABB86F00920ECC /* ContentView.swift in Sources */,
-				7CB7C7DA2AABB86F00920ECC /* oddvarApp.swift in Sources */,
+				7CB7C7DC2AABB86F00920ECC /* ItemListView.swift in Sources */,
+				7CB7C8082AABBB7600920ECC /* DepenencyEnviroment.swift in Sources */,
+				7CB7C7DA2AABB86F00920ECC /* OddvarApp.swift in Sources */,
+				7CB7C80E2AABD81200920ECC /* ItemCardView.swift in Sources */,
+				7CB7C80C2AABBF5600920ECC /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +626,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7CB7C8052AABB9ED00920ECC /* OddvarApi */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OddvarApi;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7CB7C7CE2AABB86F00920ECC /* Project object */;
 }
