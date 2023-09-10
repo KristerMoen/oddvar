@@ -2,10 +2,11 @@
 //  oddvarUITestsLaunchTests.swift
 //  oddvarUITests
 //
-//  Created by Krister Sigvaldsen Moen on 08/09/2023.
+//  Created by Krister Sigvaldsen Moen on 10/09/2023.
 //
 
 import XCTest
+import SwiftUI
 
 final class oddvarUITestsLaunchTests: XCTestCase {
 
@@ -18,6 +19,7 @@ final class oddvarUITestsLaunchTests: XCTestCase {
     }
 
     func testLaunch() throws {
+        
         let app = XCUIApplication()
         app.launch()
 

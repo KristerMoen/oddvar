@@ -8,11 +8,13 @@
 import Foundation
 import OddvarApi
 
-class DependencyEnvironment: ObservableObject {
-    let apiClient: OddvarApiClient
+public class DependencyEnviroment: ObservableObject {
+    public let apiClient: OddvarApiClient
+    public let store: OddvarState
     
-    init(apiClient: OddvarApiClient) {
+    public init(apiClient: OddvarApiClient, oddvarState: OddvarState) {
         self.apiClient = apiClient
+        self.store = oddvarState
     }
 }
 

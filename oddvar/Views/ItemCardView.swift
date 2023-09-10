@@ -9,23 +9,15 @@ import Foundation
 import SwiftUI
 import OddvarApi
 
-extension Animation {
-    static func ripple(index: Int) -> Animation {
-        Animation.spring(dampingFraction: 0.5)
-            .speed(2)
-            .delay(0.03 * Double(index))
-    }
-}
-
-struct ItemCardView: View {
+public struct ItemCardView: View {
     var imageURL: URL?
     var imageScalable: Bool
     var location: String?
     var description: String?
     var price: String
-    @State var isFavorite: Bool
+    @Binding var isFavorite: Bool
     
-    var body: some View {
+    public var body: some View {
         VStack {
             AsyncImage(url: imageURL)
                 .aspectRatio(contentMode: .fit)
@@ -48,14 +40,12 @@ struct ItemCardView: View {
                     .foregroundColor(isFavorite ? .pink : .mint)
                     .background(.white.opacity(0.75),
                                 in: RoundedRectangle(cornerRadius: 10.0, style: .continuous))
-                    .padding()
+                
                     .onTapGesture {
                         withAnimation(.easeInOut(duration: 0.4)) {
-                            isFavorite.toggle()
+                            self.isFavorite.toggle()
                         }
-                      
-                    }
-                
+                    } 
             }
             .clipShape(RoundedRectangle(cornerRadius: 10.0, style: .continuous))
             .onTapGesture(count: 2) {
@@ -85,6 +75,8 @@ struct ItemCardView: View {
 
 
 struct ItemCardView_Previews: PreviewProvider {
+    @State static var value = false
+    
     static var previews: some View {
         ItemCardView(
             imageURL: ItemGroup.mock.items?.first?.image?.imageUrl,
@@ -92,7 +84,7 @@ struct ItemCardView_Previews: PreviewProvider {
             location: "BirkebeinerLand",
             description: "Stol selges med forbehold om kattehår",
             price: "2999,-",
-            isFavorite: true
+            isFavorite: $value
         )
     }
 }

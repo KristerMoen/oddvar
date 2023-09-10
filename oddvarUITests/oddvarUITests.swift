@@ -2,10 +2,14 @@
 //  oddvarUITests.swift
 //  oddvarUITests
 //
-//  Created by Krister Sigvaldsen Moen on 08/09/2023.
+//  Created by Krister Sigvaldsen Moen on 10/09/2023.
 //
 
 import XCTest
+import SwiftUI
+import SnapshotTesting
+@testable import oddvarFramework
+import OddvarApi
 
 final class oddvarUITests: XCTestCase {
 
@@ -21,21 +25,21 @@ final class oddvarUITests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
+    
+    func testItemCardSnapshot() {
+        let lol = ItemCardView(
+            imageURL: ItemGroup.mock.items?.first?.image?.imageUrl,
+            imageScalable: true,
+            location: "BirkebeinerLand",
+            description: "Stol selges med forbehold om kattehår",
+            price: "2999,-",
+            isFavorite: .constant(true)
+        )
 
-    func testExample() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
-        app.launch()
 
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        assertSnapshot(matching: lol, as: .image)
+
     }
 
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
-        }
-    }
+
 }

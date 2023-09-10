@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct Constants {
+public struct Constants {
     public static var baseURL = URL.init(string: "https://gist.githubusercontent.com/baldermork/6a1bcc8f429dcdb8f9196e917e5138bd/raw/discover.json")!
 }

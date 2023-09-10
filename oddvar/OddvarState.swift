@@ -1,0 +1,48 @@
+//
+//  OddvarState.swift
+//  oddvar
+//
+//  Created by Krister Sigvaldsen Moen on 10/09/2023.
+//
+
+import Foundation
+import SwiftUI
+import OddvarApi
+
+@MainActor
+public class OddvarState: ObservableObject {
+    
+    public init() { }
+    
+    public static func fileURL() throws -> URL {
+        try FileManager.default.url(for: .documentDirectory,
+                                    in: .userDomainMask,
+                                    appropriateFor: nil,
+                                    create: false)
+        .appendingPathComponent("items.data")
+    }
+    
+    public func load() async throws -> [Item] {
+        let task = Task<[Item], Error> {
+            let fileURL = try Self.fileURL()
+            guard let data = try? Data(contentsOf: fileURL) else {
+                return []
+            }
+            let items = try JSONDecoder().decode([Item].self, from: data)
+            return items
+        }
+        let items = try await task.value
+        
+        return items
+    }
+    
+    
+    public func save(items: [Item]) async throws {
+        let task = Task {
+            let data = try JSONEncoder().encode(items)
+            let outfile = try Self.fileURL()
+            try data.write(to: outfile)
+        }
+        _ = try await task.value
+    }
+}

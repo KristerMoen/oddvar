@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import OddvarApi
+import oddvarFramework
 
 @main
 struct OddvarApp: App {
     var body: some Scene {
         WindowGroup {
-            WelcomeView(environment: .init(apiClient: .live(baseURL: Constants.baseURL)))
+           PickerContainerView(enviroment: .init(apiClient: .live(baseURL: Constants.baseURL), oddvarState: OddvarState()))
         }
     }
 }

@@ -7,70 +7,50 @@
 
 import SwiftUI
 import OddvarApi
+import Combine
 
-class ItemListViewModel: ObservableObject {
-    
-    let environment: DependencyEnvironment
-    init(environment: DependencyEnvironment) {
-        self.environment = environment
-    }
-    
-    @Published var items: [Item] = [Item]()
-    
-    func onAppear() {
-        Task {
-            
-            do {
-                let adItems = try await environment.apiClient.getOddvarItems()
-            
-                DispatchQueue.main.async {
-                    self.items = adItems.items ?? []
-                }
-            }
-            catch {
-                print(error)
-            }
-        }
-        
-    }
-    
-}
+public struct ItemListView: View {
+    @Binding var items: [Item]
+    var saveAction: (Item) -> Void
 
-struct WelcomeView: View {
-    
-    @StateObject var itemListViewModel: ItemListViewModel
-    init(environment: DependencyEnvironment) {
-        _itemListViewModel = StateObject(wrappedValue: ItemListViewModel(environment: environment))
-    }
-    
-    var body: some View {
+    public var body: some View {
         ScrollView {
             LazyVStack {
-                ForEach(itemListViewModel.items, id: \.id) { item in
+                ForEach($items, id: \.id) { $item in
                     ItemCardView(
                         imageURL: item.image?.imageUrl,
                         imageScalable: item.image?.scalable ?? false,
                         location: item.location,
-                        description: item.description,
+                        description: item.descriptionTitle,
                         price: item.price?.prettyNOKFormat ?? "Gis bort",
-                        isFavorite: true
+                        isFavorite: $item.favorited
                     )
-                    
                     .background(.gray.opacity(0.1))
                     .cornerRadius(8)
                     .padding()
+                    .onChange(of: item.favorited) { _ in
+                        saveAction(item)
+                    }
                 }
+              
+                
             }
-            .onAppear {
-                itemListViewModel.onAppear()
-            }
+            
         }
-       
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        WelcomeView(environment: .init(apiClient: .demo))
+//struct ItemListView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ItemListView(items: ItemGroup.mock.items ?? [], saveAction: {
+//
+//        })
+//    }
+//}
+
+
+public struct LolListView: View {
+    public var body: some View {
+        Text("LOL")
     }
 }
