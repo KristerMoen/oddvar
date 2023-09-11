@@ -9,7 +9,13 @@ import Foundation
 import SwiftUI
 import OddvarApi
 
-@MainActor
+/**
+ A Swift class responsible for managing the state of oddvar `[Item] , including loading and saving items to and from the device's storage.
+ This class is designed as an ObservableObject, making it suitable for SwiftUI-based user interfaces.
+
+ - Important: Ensure that this class is used within an environment that supports asynchronous programming.
+*/
+
 public class OddvarState: ObservableObject {
     
     public init() { }
@@ -35,7 +41,6 @@ public class OddvarState: ObservableObject {
         
         return items
     }
-    
     
     public func save(items: [Item]) async throws {
         let task = Task {

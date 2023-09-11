@@ -7,16 +7,26 @@
 		<key>oddvar.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<key>oddvarFramework.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
+		</dict>
+		<key>oddvarUITests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>7C620A8E2AAE6E5700239261</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>7CB7C7D52AABB86F00920ECC</key>
 		<dict>
 			<key>primary</key>
