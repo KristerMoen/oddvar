@@ -29,6 +29,7 @@
 		7C620AA92AAE6FC500239261 /* OddvarApi in Frameworks */ = {isa = PBXBuildFile; productRef = 7C620AA82AAE6FC500239261 /* OddvarApi */; };
 		7CB0D39B2AAF974E0054BFFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB7C7DD2AABB87000920ECC /* Assets.xcassets */; };
 		7CB0D39D2AAFAFE50054BFFF /* TextImageOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB0D39C2AAFAFE50054BFFF /* TextImageOverlay.swift */; };
+		7CB0D3A12AAFBF650054BFFF /* after+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB0D3A02AAFBF650054BFFF /* after+Tests.swift */; };
 		7CB7C7DE2AABB87000920ECC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB7C7DD2AABB87000920ECC /* Assets.xcassets */; };
 		7CB7C8062AABB9ED00920ECC /* OddvarApi in Frameworks */ = {isa = PBXBuildFile; productRef = 7CB7C8052AABB9ED00920ECC /* OddvarApi */; };
 /* End PBXBuildFile section */
@@ -91,6 +92,7 @@
 		7C620A912AAE6E5700239261 /* oddvarFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = oddvarFramework.h; sourceTree = "<group>"; };
 		7C620A922AAE6E5700239261 /* oddvarFramework.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = oddvarFramework.docc; sourceTree = "<group>"; };
 		7CB0D39C2AAFAFE50054BFFF /* TextImageOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextImageOverlay.swift; sourceTree = "<group>"; };
+		7CB0D3A02AAFBF650054BFFF /* after+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "after+Tests.swift"; sourceTree = "<group>"; };
 		7CB7C7D62AABB86F00920ECC /* oddvar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oddvar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CB7C7D92AABB86F00920ECC /* OddvarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddvarApp.swift; sourceTree = "<group>"; };
 		7CB7C7DB2AABB86F00920ECC /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
@@ -188,7 +190,6 @@
 				7C620A6F2AAE331E00239261 /* oddvarUITests */,
 				7C620A902AAE6E5700239261 /* oddvarFramework */,
 				7CB7C7D72AABB86F00920ECC /* Products */,
-				7CB7C8042AABB9ED00920ECC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -227,15 +228,9 @@
 			isa = PBXGroup;
 			children = (
 				7CB7C7EA2AABB87000920ECC /* oddvarTests.swift */,
+				7CB0D3A02AAFBF650054BFFF /* after+Tests.swift */,
 			);
 			path = oddvarTests;
-			sourceTree = "<group>";
-		};
-		7CB7C8042AABB9ED00920ECC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7CB7C8092AABBEA500920ECC /* Views */ = {
@@ -480,6 +475,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CB0D3A12AAFBF650054BFFF /* after+Tests.swift in Sources */,
 				7C620A7D2AAE5D3E00239261 /* oddvarTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

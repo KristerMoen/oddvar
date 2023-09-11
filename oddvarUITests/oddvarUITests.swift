@@ -12,6 +12,8 @@ import SnapshotTesting
 import OddvarApi
 
 final class oddvarUITests: XCTestCase {
+    
+    let record = false
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -26,8 +28,8 @@ final class oddvarUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
-    func testItemCardSnapshot() {
-        let lol = ItemCardView(
+    func testItemCardFavoritedSnapshot() {
+        let itemCardView = ItemCardView(
             imageURL: ItemGroup.mock.items?.first?.image?.imageUrl,
             imageScalable: true,
             location: "BirkebeinerLand",
@@ -35,10 +37,26 @@ final class oddvarUITests: XCTestCase {
             price: "2999,-",
             isFavorite: .constant(true)
         )
-
-
-        assertSnapshot(matching: lol, as: .image)
-
+        
+        assertSnapshot(matching: itemCardView, as: .image, record: record)
+    }
+    
+    func testItemCardNotFavoritedSnapshot() {
+        let itemCardView = ItemCardView(
+            imageURL: ItemGroup.mock.items?.first?.image?.imageUrl,
+            imageScalable: true,
+            location: "BirkebeinerLand",
+            description: "Stol selges med forbehold om kattehår",
+            price: "2999,-",
+            isFavorite: .constant(false)
+        )
+        
+        assertSnapshot(matching: itemCardView, as: .image, record: record)
+    }
+    
+    func testPickerContainerView() {
+        let pickerView = PickerContainerView(enviroment: .init(apiClient: .demo, oddvarState: OddvarState()))
+        assertSnapshot(matching: pickerView, as: .image, record: record)
     }
 
 
