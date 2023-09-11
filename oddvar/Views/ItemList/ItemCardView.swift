@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 import OddvarApi
+import CachedAsyncImage
 
 /**
  A SwiftUI view for displaying an item card with details.
@@ -44,7 +45,7 @@ public struct ItemCardView: View {
     
     public var body: some View {
         VStack {
-            AsyncImage(url: imageURL)
+            CachedAsyncImage(url: imageURL)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 350, height: 400)
             
