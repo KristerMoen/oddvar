@@ -7,10 +7,16 @@
 - [**Project**](#project)
   - [Current Code](#current-code)
   - [New Code](#new-code)
-  - [Compability: UIKit + SwiftUI](#compability-uikit--swiftui)
   - [Tasks](#tasks)
   - [Design](#design)
-  - [API](#api)
+  - [Testing](#testing)
+    - [Note: UI Testing](#note:-ui-testing)
+  - [Dependencies](#dependencies)
+    - [Firstparty](#firstparty)
+    - [Thirdparty](#thirdparty)
+  - [If there’s anything you feel particularly proud of](#If-there’s-anything-you-feel-particularly-proud-of)
+  - [If there’s anything you believe could have been done better](#If-there’s-anything-you-believe-could-have-been-done-better)
+  - [What else you could have done with more time](#What-else-you-could-have-done-with-more-time)
 ##
 
 # oddvar
