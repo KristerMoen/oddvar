@@ -1,0 +1,35 @@
+{
+  "configurations" : [
+    {
+      "id" : "9E98ED66-5575-4FAE-9E6C-3EAE3D55354C",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:oddvar.xcodeproj",
+      "identifier" : "7CB7C7D52AABB86F00920ECC",
+      "name" : "oddvar"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:oddvar.xcodeproj",
+        "identifier" : "7CB7C7E52AABB87000920ECC",
+        "name" : "oddvarTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:oddvar.xcodeproj",
+        "identifier" : "7C620A6D2AAE331E00239261",
+        "name" : "oddvarUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
