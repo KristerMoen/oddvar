@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7C0E5A592AB0FEE600F96F9C /* OddvarApi in Frameworks */ = {isa = PBXBuildFile; productRef = 7C0E5A582AB0FEE600F96F9C /* OddvarApi */; };
+		7C5630932AB1083F001505AA /* OddvarApi in Resources */ = {isa = PBXBuildFile; fileRef = 7C5630922AB1083F001505AA /* OddvarApi */; };
+		7C5630962AB1084D001505AA /* OddvarApi in Frameworks */ = {isa = PBXBuildFile; productRef = 7C5630952AB1084D001505AA /* OddvarApi */; };
 		7C620A712AAE331E00239261 /* oddvarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C620A702AAE331E00239261 /* oddvarUITests.swift */; };
 		7C620A7D2AAE5D3E00239261 /* oddvarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB7C7EA2AABB87000920ECC /* oddvarTests.swift */; };
 		7C620A832AAE62EA00239261 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 7C620A822AAE62EA00239261 /* SnapshotTesting */; };
@@ -79,7 +80,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7C0E5A572AB0FEDA00F96F9C /* OddvarApi */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = OddvarApi; sourceTree = "<group>"; };
+		7C5630922AB1083F001505AA /* OddvarApi */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = OddvarApi; sourceTree = "<group>"; };
 		7C620A482AADF20800239261 /* PickerContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerContainerView.swift; sourceTree = "<group>"; };
 		7C620A4A2AADF78E00239261 /* OddvarState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddvarState.swift; sourceTree = "<group>"; };
 		7C620A4C2AAE286A00239261 /* PickerContainerCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerContainerCore.swift; sourceTree = "<group>"; };
@@ -116,7 +117,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CB0D3A72AAFC3D70054BFFF /* CachedAsyncImage in Frameworks */,
-				7C0E5A592AB0FEE600F96F9C /* OddvarApi in Frameworks */,
+				7C5630962AB1084D001505AA /* OddvarApi in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,12 +139,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7C0E5A562AB0FEDA00F96F9C /* Packages */ = {
+		7C5630942AB1084D001505AA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7C0E5A572AB0FEDA00F96F9C /* OddvarApi */,
 			);
-			name = Packages;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7C620A6F2AAE331E00239261 /* oddvarUITests */ = {
@@ -182,23 +182,16 @@
 			path = PickerContainer;
 			sourceTree = "<group>";
 		};
-		7CB0D3A52AAFC3D70054BFFF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		7CB7C7CD2AABB86F00920ECC = {
 			isa = PBXGroup;
 			children = (
-				7C0E5A562AB0FEDA00F96F9C /* Packages */,
+				7C5630922AB1083F001505AA /* OddvarApi */,
 				7CB7C7D82AABB86F00920ECC /* oddvar */,
 				7CB7C7E92AABB87000920ECC /* oddvarTests */,
 				7C620A6F2AAE331E00239261 /* oddvarUITests */,
 				7C620A902AAE6E5700239261 /* oddvarFramework */,
 				7CB7C7D72AABB86F00920ECC /* Products */,
-				7CB0D3A52AAFC3D70054BFFF /* Frameworks */,
+				7C5630942AB1084D001505AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -313,7 +306,7 @@
 			name = oddvarFramework;
 			packageProductDependencies = (
 				7CB0D3A62AAFC3D70054BFFF /* CachedAsyncImage */,
-				7C0E5A582AB0FEE600F96F9C /* OddvarApi */,
+				7C5630952AB1084D001505AA /* OddvarApi */,
 			);
 			productName = oddvarFramework;
 			productReference = 7C620A8F2AAE6E5700239261 /* oddvarFramework.framework */;
@@ -433,6 +426,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CB7C7DE2AABB87000920ECC /* Assets.xcassets in Resources */,
+				7C5630932AB1083F001505AA /* OddvarApi in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,7 +546,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_ASSET_PATHS = OddvarApi;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 5PKTA338CL;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -586,7 +580,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_ASSET_PATHS = OddvarApi;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 5PKTA338CL;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -900,7 +894,7 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		7C0E5A582AB0FEE600F96F9C /* OddvarApi */ = {
+		7C5630952AB1084D001505AA /* OddvarApi */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = OddvarApi;
 		};
