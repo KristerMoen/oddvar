@@ -29,6 +29,13 @@
         "identifier" : "7C620A6D2AAE331E00239261",
         "name" : "oddvarUITests"
       }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:OddvarApi",
+        "identifier" : "OddvarApiTests",
+        "name" : "OddvarApiTests"
+      }
     }
   ],
   "version" : 1

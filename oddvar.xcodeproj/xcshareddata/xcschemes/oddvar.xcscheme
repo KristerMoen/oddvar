@@ -29,7 +29,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:../oddvar.xctestplan"
+            reference = "container:OddvarTestPlan.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>

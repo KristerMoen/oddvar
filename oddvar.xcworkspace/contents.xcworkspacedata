@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "container:oddvar.xcodeproj">
+      location = "group:OddvarTestPlan.xctestplan">
    </FileRef>
    <FileRef
-      location = "group:../oddvar.xctestplan">
+      location = "container:oddvar.xcodeproj">
    </FileRef>
 </Workspace>
