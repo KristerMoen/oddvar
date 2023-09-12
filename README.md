@@ -5,8 +5,7 @@
 ## Table of Contents  
 - [**Getting started**](#getting-started)
 - [**Project**](#project)
-  - [Current Code](#current-code)
-  - [New Code](#new-code)
+  - [Code](#code)
   - [Tasks](#tasks)
   - [Design](#design)
   - [Testing](#testing)
@@ -14,8 +13,8 @@
   - [Dependencies](#dependencies)
     - [Firstparty](#firstparty)
     - [Thirdparty](#thirdparty)
-  - [If there’s anything you feel particularly proud of](#If-there’s-anything-you-feel-particularly-proud-of)
-  - [If there’s anything you believe could have been done better](#If-there’s-anything-you-believe-could-have-been-done-better)
+  - [If there’s anything you feel particularly proud of](#if-there’s-anything-you-feel-particularly-proud-of)
+  - [If there’s anything you believe could have been done better](#if-there’s-anything-you-believe-could-have-been-done-better)
   - [What else you could have done with more time](#What-else-you-could-have-done-with-more-time)
 ##
 
@@ -31,7 +30,7 @@ The app uses the `OddvarApi` to do requests, it's essential that the package are
 Develop an adaptable app that can handle changing JSON ads, potentially receiving more than currently available. Allow users to favorite ads, enabling offline access.
 Include a toggle to switch between displaying favorite ads and all ads.
 
-### Current Code
+### Code
 The app uses a MVC-type arcitechture, with SwiftUI for UI and controller for logic. All the apps functionality is packet into a dynamic framework `oddvarFramework`, for easier implementing Unit- and UI-tests.
 The arcitehture makes it really easy to implement new UI functionality, since the enviroment `DependencyEnviroment` uses an APIClient `OddvarAPi` for manageing API-requests. 
 The enviroment is being passed to any view and is initalized like this:
