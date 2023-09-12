@@ -2,6 +2,17 @@
   <img src="https://github.com/KristerMoen/oddvar/assets/59565176/e5c51a24-e5cb-44f8-a1f5-3df60ddd2f0f" alt="oddvar logo" />
 </p>
 
+## Table of Contents  
+- [**Getting started**](#getting-started)
+- [**Project**](#project)
+  - [Current Code](#current-code)
+  - [New Code](#new-code)
+  - [Compability: UIKit + SwiftUI](#compability-uikit--swiftui)
+  - [Tasks](#tasks)
+  - [Design](#design)
+  - [API](#api)
+##
+
 # oddvar
 A simple little app displaying ads in a beautiful way. 
 
