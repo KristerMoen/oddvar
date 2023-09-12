@@ -1,0 +1,31 @@
+{
+  "configurations" : [
+    {
+      "id" : "3D385AF4-C00F-46E3-881C-9D1F05CEE8C8",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:oddvar.xcodeproj",
+        "identifier" : "7CB7C7E52AABB87000920ECC",
+        "name" : "oddvarTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:oddvar.xcodeproj",
+        "identifier" : "7C620A6D2AAE331E00239261",
+        "name" : "oddvarUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
