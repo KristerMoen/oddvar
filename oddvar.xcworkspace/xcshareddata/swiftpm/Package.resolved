@@ -1,15 +1,6 @@
 {
   "pins" : [
     {
-      "identity" : "oddvarapi",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/KristerMoen/oddvarApi",
-      "state" : {
-        "branch" : "main",
-        "revision" : "0d69aa50b23cf253c720101f68e2f93dfee35b75"
-      }
-    },
-    {
       "identity" : "swift-snapshot-testing",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/pointfreeco/swift-snapshot-testing",
