@@ -9,12 +9,12 @@
   - [Tasks](#tasks)
   - [Design](#design)
   - [Testing](#testing)
-    - [Note: UI Testing](#note:-ui-testing)
+    - [Note: UI Testing](#ui-testing)
   - [Dependencies](#dependencies)
     - [Firstparty](#firstparty)
     - [Thirdparty](#thirdparty)
-  - [If there’s anything you feel particularly proud of](#if-there’s-anything-you-feel-particularly-proud-of)
-  - [If there’s anything you believe could have been done better](#if-there’s-anything-you-believe-could-have-been-done-better)
+  - [If there’s anything you feel particularly proud of](#if-there-is-anything-you-feel-particularly-proud-of)
+  - [If there’s anything you believe could have been done better](#if-there-is-anything-you-believe-could-have-been-done-better)
   - [What else you could have done with more time](#What-else-you-could-have-done-with-more-time)
 ##
 
@@ -200,7 +200,7 @@ static var demoWithError = Self.init(
 ### Testing
 The app has a Test Plan - `OddvarTestPlan`. Containing some tests for API, logic and UI
 
-#### Note: UI Testing
+#### UI Testing
 When the UI tests runs the first time it caches screenshots to simulators disk, and needs to be runned one more time. 
 This is because ther isn't any screenshots to check with on initial test run.
 If the tests still failes, set `let record = true` to record new screenshots. REMEMBER to set `let record = false` when you run the tests again.
@@ -223,10 +223,10 @@ In the project we use different dependencies. Some of them are thirdparty depend
 - `SnapshotTesting` Delightful Swift snapshot testing. - https://github.com/pointfreeco/swift-snapshot-testing
 - `CachedAsyncImage` Little Swift package for caching `AsyncImage` - https://github.com/lorenzofiamingo/swiftui-cached-async-image
 
-##### If there’s anything you feel particularly proud of
+##### If there is anything you feel particularly proud of
 Learning and implementing a new kind of arcitechture. Really cool to get the UITests working and also i'm proud of the API package with switchable requests.
 
-##### If there’s anything you believe could have been done better
+##### If there is anything you believe could have been done better
 The UI should have been i bit more sleek and crisp, but the app is meant for senior citizents - so maybe it's not that bad?
 
 ##### What else you could have done with more time
