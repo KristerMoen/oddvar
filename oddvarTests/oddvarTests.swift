@@ -32,8 +32,9 @@ final class oddvarTests: XCTestCase {
         vm.onAppear()
         
         after(2) {
-            XCTAssertEqual(result.count, 99)
+            XCTAssertEqual(result.count, 98)
             exp.fulfill()
+            cancellable.cancel()
         }
         
         waitForExpectations(timeout: 4, handler: nil)

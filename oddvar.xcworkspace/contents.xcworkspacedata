@@ -5,6 +5,6 @@
       location = "container:oddvar.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../oddvar.xctestplan">
+      location = "group:/Users/krister/Documents/Beining&amp;Bogen/OddvarTestPlan.xctestplan">
    </FileRef>
 </Workspace>
