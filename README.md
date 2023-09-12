@@ -2,6 +2,22 @@
   <img src="https://github.com/KristerMoen/oddvar/assets/59565176/e5c51a24-e5cb-44f8-a1f5-3df60ddd2f0f" alt="oddvar logo" />
 </p>
 
+## Table of Contents  
+- [**Getting started**](#getting-started)
+- [**Project**](#project)
+  - [Code](#code)
+  - [Tasks](#tasks)
+  - [Design](#design)
+  - [Testing](#testing)
+    - [Note: UI Testing](#ui-testing)
+  - [Dependencies](#dependencies)
+    - [Firstparty](#firstparty)
+    - [Thirdparty](#thirdparty)
+  - [If there’s anything you feel particularly proud of](#if-there-is-anything-you-feel-particularly-proud-of)
+  - [If there’s anything you believe could have been done better](#if-there-is-anything-you-believe-could-have-been-done-better)
+  - [What else you could have done with more time](#What-else-you-could-have-done-with-more-time)
+##
+
 # oddvar
 A simple little app displaying ads in a beautiful way. 
 
@@ -14,7 +30,7 @@ The app uses the `OddvarApi` to do requests, it's essential that the package are
 Develop an adaptable app that can handle changing JSON ads, potentially receiving more than currently available. Allow users to favorite ads, enabling offline access.
 Include a toggle to switch between displaying favorite ads and all ads.
 
-### Current Code
+### Code
 The app uses a MVC-type arcitechture, with SwiftUI for UI and controller for logic. All the apps functionality is packet into a dynamic framework `oddvarFramework`, for easier implementing Unit- and UI-tests.
 The arcitehture makes it really easy to implement new UI functionality, since the enviroment `DependencyEnviroment` uses an APIClient `OddvarAPi` for manageing API-requests. 
 The enviroment is being passed to any view and is initalized like this:
@@ -184,7 +200,7 @@ static var demoWithError = Self.init(
 ### Testing
 The app has a Test Plan - `OddvarTestPlan`. Containing some tests for API, logic and UI
 
-#### Note: UI Testing
+#### UI Testing
 When the UI tests runs the first time it caches screenshots to simulators disk, and needs to be runned one more time. 
 This is because ther isn't any screenshots to check with on initial test run.
 If the tests still failes, set `let record = true` to record new screenshots. REMEMBER to set `let record = false` when you run the tests again.
@@ -207,10 +223,10 @@ In the project we use different dependencies. Some of them are thirdparty depend
 - `SnapshotTesting` Delightful Swift snapshot testing. - https://github.com/pointfreeco/swift-snapshot-testing
 - `CachedAsyncImage` Little Swift package for caching `AsyncImage` - https://github.com/lorenzofiamingo/swiftui-cached-async-image
 
-##### If there’s anything you feel particularly proud of
+##### If there is anything you feel particularly proud of
 Learning and implementing a new kind of arcitechture. Really cool to get the UITests working and also i'm proud of the API package with switchable requests.
 
-##### If there’s anything you believe could have been done better
+##### If there is anything you believe could have been done better
 The UI should have been i bit more sleek and crisp, but the app is meant for senior citizents - so maybe it's not that bad?
 
 ##### What else you could have done with more time
