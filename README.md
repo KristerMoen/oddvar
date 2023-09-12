@@ -24,7 +24,7 @@
 A simple little app displaying ads in a beautiful way. 
 
 ## Getting started
-To get started in this app, simply clone the repository and open the project in Xcode or your preferred IDE. When opened the project should be easy to use and ready to go out of the box. If you stumble on problems regarding Swift Package Manager (SPM), try the following command: `File` -> `Packages` -> `Reset Package Caches`
+To get started in this app, simply clone the repository and open the project in Xcode (App developed in Xcode 14.3 with iOS 16.4) or your preferred IDE. When opened the project should be easy to use and ready to go out of the box. If you stumble on problems regarding Swift Package Manager (SPM), try the following command: `File` -> `Packages` -> `Reset Package Caches`
 
 The app uses the `OddvarApi` to do requests, it's essential that the package are downloaded. If it's missing it could be found [HERE](https://gitfront.io/r/user-1550696/eYNWXTZASJVY/oddvarApi/)
 
