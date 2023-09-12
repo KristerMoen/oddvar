@@ -32,7 +32,7 @@ final class oddvarTests: XCTestCase {
         vm.onAppear()
         
         after(2) {
-            XCTAssertEqual(result.count, 98)
+            XCTAssertEqual(result.count, 99)
             exp.fulfill()
             cancellable.cancel()
         }

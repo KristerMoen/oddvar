@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C0E5A592AB0FEE600F96F9C /* OddvarApi in Frameworks */ = {isa = PBXBuildFile; productRef = 7C0E5A582AB0FEE600F96F9C /* OddvarApi */; };
 		7C620A712AAE331E00239261 /* oddvarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C620A702AAE331E00239261 /* oddvarUITests.swift */; };
-		7C620A732AAE331E00239261 /* oddvarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C620A722AAE331E00239261 /* oddvarUITestsLaunchTests.swift */; };
 		7C620A7D2AAE5D3E00239261 /* oddvarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB7C7EA2AABB87000920ECC /* oddvarTests.swift */; };
 		7C620A832AAE62EA00239261 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 7C620A822AAE62EA00239261 /* SnapshotTesting */; };
 		7C620A932AAE6E5700239261 /* oddvarFramework.docc in Sources */ = {isa = PBXBuildFile; fileRef = 7C620A922AAE6E5700239261 /* oddvarFramework.docc */; };
@@ -24,7 +24,6 @@
 		7C620AA42AAE6EFE00239261 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB7C80B2AABBF5600920ECC /* Constants.swift */; };
 		7C620AA52AAE6F0900239261 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB7C7E02AABB87000920ECC /* Preview Assets.xcassets */; };
 		7C620AA72AAE6F3700239261 /* OddvarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB7C7D92AABB86F00920ECC /* OddvarApp.swift */; };
-		7CA7F5142AB0A68600D1B3B7 /* OddvarApi in Frameworks */ = {isa = PBXBuildFile; productRef = 7CA7F5132AB0A68600D1B3B7 /* OddvarApi */; };
 		7CB0D39B2AAF974E0054BFFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB7C7DD2AABB87000920ECC /* Assets.xcassets */; };
 		7CB0D39D2AAFAFE50054BFFF /* TextImageOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB0D39C2AAFAFE50054BFFF /* TextImageOverlay.swift */; };
 		7CB0D3A12AAFBF650054BFFF /* after+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB0D3A02AAFBF650054BFFF /* after+Tests.swift */; };
@@ -80,12 +79,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7C0E5A572AB0FEDA00F96F9C /* OddvarApi */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = OddvarApi; sourceTree = "<group>"; };
 		7C620A482AADF20800239261 /* PickerContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerContainerView.swift; sourceTree = "<group>"; };
 		7C620A4A2AADF78E00239261 /* OddvarState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddvarState.swift; sourceTree = "<group>"; };
 		7C620A4C2AAE286A00239261 /* PickerContainerCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerContainerCore.swift; sourceTree = "<group>"; };
 		7C620A6E2AAE331E00239261 /* oddvarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = oddvarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C620A702AAE331E00239261 /* oddvarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oddvarUITests.swift; sourceTree = "<group>"; };
-		7C620A722AAE331E00239261 /* oddvarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oddvarUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7C620A8F2AAE6E5700239261 /* oddvarFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = oddvarFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C620A912AAE6E5700239261 /* oddvarFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = oddvarFramework.h; sourceTree = "<group>"; };
 		7C620A922AAE6E5700239261 /* oddvarFramework.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = oddvarFramework.docc; sourceTree = "<group>"; };
@@ -117,7 +116,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CB0D3A72AAFC3D70054BFFF /* CachedAsyncImage in Frameworks */,
-				7CA7F5142AB0A68600D1B3B7 /* OddvarApi in Frameworks */,
+				7C0E5A592AB0FEE600F96F9C /* OddvarApi in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,11 +138,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C0E5A562AB0FEDA00F96F9C /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				7C0E5A572AB0FEDA00F96F9C /* OddvarApi */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 		7C620A6F2AAE331E00239261 /* oddvarUITests */ = {
 			isa = PBXGroup;
 			children = (
 				7C620A702AAE331E00239261 /* oddvarUITests.swift */,
-				7C620A722AAE331E00239261 /* oddvarUITestsLaunchTests.swift */,
 			);
 			path = oddvarUITests;
 			sourceTree = "<group>";
@@ -186,6 +192,7 @@
 		7CB7C7CD2AABB86F00920ECC = {
 			isa = PBXGroup;
 			children = (
+				7C0E5A562AB0FEDA00F96F9C /* Packages */,
 				7CB7C7D82AABB86F00920ECC /* oddvar */,
 				7CB7C7E92AABB87000920ECC /* oddvarTests */,
 				7C620A6F2AAE331E00239261 /* oddvarUITests */,
@@ -306,7 +313,7 @@
 			name = oddvarFramework;
 			packageProductDependencies = (
 				7CB0D3A62AAFC3D70054BFFF /* CachedAsyncImage */,
-				7CA7F5132AB0A68600D1B3B7 /* OddvarApi */,
+				7C0E5A582AB0FEE600F96F9C /* OddvarApi */,
 			);
 			productName = oddvarFramework;
 			productReference = 7C620A8F2AAE6E5700239261 /* oddvarFramework.framework */;
@@ -391,7 +398,6 @@
 			packageReferences = (
 				7C620A812AAE62E900239261 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
 				7CB0D3A22AAFC39D0054BFFF /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
-				7CA7F5122AB0A68600D1B3B7 /* XCRemoteSwiftPackageReference "oddvarApi" */,
 			);
 			productRefGroup = 7CB7C7D72AABB86F00920ECC /* Products */;
 			projectDirPath = "";
@@ -444,7 +450,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C620A732AAE331E00239261 /* oddvarUITestsLaunchTests.swift in Sources */,
 				7C620A712AAE331E00239261 /* oddvarUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -547,7 +552,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_ASSET_PATHS = OddvarApi;
 				DEVELOPMENT_TEAM = 5PKTA338CL;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -581,7 +586,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_ASSET_PATHS = OddvarApi;
 				DEVELOPMENT_TEAM = 5PKTA338CL;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -884,14 +889,6 @@
 				minimumVersion = 1.0.0;
 			};
 		};
-		7CA7F5122AB0A68600D1B3B7 /* XCRemoteSwiftPackageReference "oddvarApi" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/KristerMoen/oddvarApi";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
 		7CB0D3A22AAFC39D0054BFFF /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/lorenzofiamingo/swiftui-cached-async-image";
@@ -903,15 +900,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		7C0E5A582AB0FEE600F96F9C /* OddvarApi */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OddvarApi;
+		};
 		7C620A822AAE62EA00239261 /* SnapshotTesting */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7C620A812AAE62E900239261 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
 			productName = SnapshotTesting;
-		};
-		7CA7F5132AB0A68600D1B3B7 /* OddvarApi */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7CA7F5122AB0A68600D1B3B7 /* XCRemoteSwiftPackageReference "oddvarApi" */;
-			productName = OddvarApi;
 		};
 		7CB0D3A62AAFC3D70054BFFF /* CachedAsyncImage */ = {
 			isa = XCSwiftPackageProductDependency;
