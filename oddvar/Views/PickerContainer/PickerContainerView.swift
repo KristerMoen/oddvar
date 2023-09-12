@@ -31,7 +31,7 @@ public struct PickerContainerView: View {
             }
             .background(Color("lightBeige"))
             .pickerStyle(.segmented)
-            .padding()
+            .padding([.leading, .trailing])
             .onChange(of: pickerContainerViewModel.selectedPage) { newValue in
                 pickerContainerViewModel.swapItemArray()
             }
@@ -43,9 +43,47 @@ public struct PickerContainerView: View {
                 pickerContainerViewModel.onAppear()
             }
             .ignoresSafeArea()
-
+            
         }
         .background(Color("lightBeige"))
+        .safeAreaInset(edge: .top) {
+            HStack{
+                Spacer()
+                Button("Tøm lagrede elementer") {
+                    pickerContainerViewModel.deleteStorage()
+                }
+                .padding([.trailing])
+                .buttonStyle(.bordered)
+                .font(.system(size: 8,weight: .medium))
+                .foregroundColor(.red)
+                
+            }
+        }
+        .alert(
+            "Noe gikk galt!",
+            isPresented: $pickerContainerViewModel.error.isNotNil(),
+            presenting: pickerContainerViewModel.error,
+            actions: { _ in },
+            message: { error in
+                Text(error)
+            }
+        )
+        .overlay {
+            if pickerContainerViewModel.isLoading {
+                ProgressView()
+            }
+        }
+    }
+}
+
+
+extension Binding {
+    func isNotNil<T>() -> Binding<Bool> where Value == T? {
+        .init(get: {
+            wrappedValue != nil
+        }, set: { _ in
+            wrappedValue = nil
+        })
     }
 }
 
@@ -56,6 +94,6 @@ public struct PickerContainerView: View {
  */
 struct PickerContainerView_Previews: PreviewProvider {
     static var previews: some View {
-        PickerContainerView(enviroment: .init(apiClient: .demoWithManyFavorites, oddvarState: OddvarState()))
+        PickerContainerView(enviroment: .init(apiClient: .demoWithError, oddvarState: OddvarState()))
     }
 }

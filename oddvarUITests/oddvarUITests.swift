@@ -12,8 +12,16 @@ import SnapshotTesting
 import OddvarApi
 
 final class oddvarUITests: XCTestCase {
-    
+
     let record = false
+    let app = XCUIApplication()
+    
+    override func setUp() {
+        super.setUp()
+    
+        continueAfterFailure = false
+        app.launch()
+    }
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -26,6 +34,15 @@ final class oddvarUITests: XCTestCase {
 
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
+    }
+    
+    func testScrollDownInApp() {
+        let scrolls = 5
+        var count = 0
+        while count < scrolls {
+            app.swipeUp()
+            count += 1
+        }
     }
     
     func testItemCardFavoritedSnapshot() {
@@ -58,6 +75,5 @@ final class oddvarUITests: XCTestCase {
         let pickerView = PickerContainerView(enviroment: .init(apiClient: .demo, oddvarState: OddvarState()))
         assertSnapshot(matching: pickerView, as: .image, record: record)
     }
-
 
 }

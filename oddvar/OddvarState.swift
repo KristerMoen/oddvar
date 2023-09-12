@@ -50,4 +50,13 @@ public class OddvarState: ObservableObject {
         }
         _ = try await task.value
     }
+    
+    @discardableResult
+    public func deleteAll() async throws {
+        let task = Task {
+            let outfile = try Self.fileURL()
+            try FileManager.default.removeItem(at: outfile)
+        }
+        _ = try await task.value
+    }
 }

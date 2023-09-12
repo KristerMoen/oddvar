@@ -31,6 +31,8 @@ public class PickerContainerViewModel: ObservableObject {
     @Published var items: [Item] = []
     @Published var selectedPage: Page = .nonFiltered
     @Published var pages: [Page] = [.nonFiltered]
+    @Published var error: String? = nil
+    @Published var isLoading: Bool = false
     
     var enviroment: DependencyEnviroment
     init(enviroment: DependencyEnviroment) {
@@ -40,6 +42,7 @@ public class PickerContainerViewModel: ObservableObject {
     public func onAppear() {
         Task {
             do {
+                self.isLoading = true
                 let storedItems = try await enviroment.store.load()
                 let adItems = try await enviroment.apiClient.getOddvarItems()
                 
@@ -54,11 +57,12 @@ public class PickerContainerViewModel: ObservableObject {
                     }
                     let filtered = self.items.filter { $0.favorited == true }
                     self.pages = filtered.isEmpty ? [.nonFiltered] : [.nonFiltered, .filtered]
+                    self.isLoading = false
                 }
             }
             catch {
-                // TODO: Add alert
-                print(error.localizedDescription)
+                self.error = error.localizedDescription
+                self.isLoading = false
             }
         }
     }
@@ -97,8 +101,21 @@ public class PickerContainerViewModel: ObservableObject {
                 }
             }
             catch {
-                // TODO: Add alert
-                print(error.localizedDescription)
+                self.error = error.localizedDescription
+            }
+        }
+    }
+    
+    public func deleteStorage() {
+        Task {
+            do {
+                try await enviroment.store.deleteAll()
+                DispatchQueue.main.async {
+                    self.onAppear()
+                }
+            }
+            catch {
+                self.error = error.localizedDescription
             }
         }
     }
@@ -118,7 +135,6 @@ public class PickerContainerViewModel: ObservableObject {
                     let filtered = storedItems.filter { $0.favorited == true }
                     self.items = self.selectedPage == .filtered ? filtered : storedItems
                 }
-                
             }
             catch {
                 // TODO: Add alert
