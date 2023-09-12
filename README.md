@@ -1,5 +1,5 @@
 <p align="center" width="100%">
-  <img src="https://github.com/KristerMoen/oddvar/assets/59565176/e5c51a24-e5cb-44f8-a1f5-3df60ddd2f0f" alt="oddvar logo" />
+  <img src="https://github.com/KristerMoen/oddvar/assets/59565176/e6f470a3-f56f-41cd-817d-0ec7f33e9314" alt="oddvar logo" />
 </p>
 
 ## Table of Contents  
@@ -8,6 +8,8 @@
   - [Code](#code)
   - [Tasks](#tasks)
   - [Design](#design)
+  - [API and Enviroment](#api-and-enviroment)
+    - [Testing Mock APIs](#testing-mock-apis)
   - [Testing](#testing)
     - [Note: UI Testing](#ui-testing)
   - [Dependencies](#dependencies)
@@ -15,7 +17,7 @@
     - [Thirdparty](#thirdparty)
   - [If there’s anything you feel particularly proud of](#if-there-is-anything-you-feel-particularly-proud-of)
   - [If there’s anything you believe could have been done better](#if-there-is-anything-you-believe-could-have-been-done-better)
-  - [What else you could have done with more time](#What-else-you-could-have-done-with-more-time)
+  - [What else you could have done with more time](#what-else-you-could-have-done-with-more-time)
 ##
 
 # oddvar
@@ -196,6 +198,9 @@ static var demoWithError = Self.init(
     }
 )
 ```
+#### Testing Mock APIs
+When testing some of the mock APIs - the stored values may not reload, so i've added a "Tøm lagrede elementer"-button to erase the stored elements.
+This is something that would only be a part of a staging or beta target/version of the app. But are added here for conviniently testing `OddvarAPI`.
 
 ### Testing
 The app has a Test Plan - `OddvarTestPlan`. Containing some tests for API, logic and UI
