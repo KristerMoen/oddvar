@@ -79,9 +79,9 @@ better
 ### Design
 If i had more time i would spend it on sketching in Figma and customizing the app for senior citizens for more user-friendly application.
 <p align="center" width="100%">
-    <img src="https://github.com/KristerMoen/oddvar/assets/59565176/c641be73-7732-42d3-88d9-a6e6c1e3871a" width="300 alt="picture of odddvar app" />
-    <img src="https://github.com/KristerMoen/oddvar/assets/59565176/7a38ec94-9d2e-41b8-987d-e7f3c9237b6c" width="300 alt="picture of odddvar app" />
-    <img src="https://github.com/KristerMoen/oddvar/assets/59565176/fba706b5-4de6-4214-b4ea-b7d8d76b8c0e" width="300 alt="picture of odddvar app" />
+    <img src="https://github.com/KristerMoen/oddvar/assets/59565176/c641be73-7732-42d3-88d9-a6e6c1e3871a" width="200" alt="picture of odddvar app" />
+    <img src="https://github.com/KristerMoen/oddvar/assets/59565176/7a38ec94-9d2e-41b8-987d-e7f3c9237b6c" width="200" alt="picture of odddvar app" />
+    <img src="https://github.com/KristerMoen/oddvar/assets/59565176/fba706b5-4de6-4214-b4ea-b7d8d76b8c0e" width="200" alt="picture of odddvar app" />
 </p>
 
 ### API and Enviroment
