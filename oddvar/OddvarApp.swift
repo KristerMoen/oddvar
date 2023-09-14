@@ -13,7 +13,12 @@ import oddvarFramework
 struct OddvarApp: App {
     var body: some Scene {
         WindowGroup {
-            PickerContainerView(enviroment: .init(apiClient: .live(baseURL: Constants.baseURL), oddvarState: OddvarState()))
+            PickerContainerView(
+                enviroment: .init(
+                    apiClient: .live(baseURL: Constants.baseURL),
+                    oddvarState: OddvarState()
+                )
+            )
         }
     }
 }

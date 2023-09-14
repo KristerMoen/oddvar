@@ -18,6 +18,7 @@ import Combine
  */
 public struct PickerContainerView: View {
     @StateObject var pickerContainerViewModel: PickerContainerViewModel
+    
     public init(enviroment: DependencyEnviroment) {
         _pickerContainerViewModel = StateObject(wrappedValue: PickerContainerViewModel(enviroment: enviroment))
     }
@@ -73,17 +74,6 @@ public struct PickerContainerView: View {
                 ProgressView()
             }
         }
-    }
-}
-
-
-extension Binding {
-    func isNotNil<T>() -> Binding<Bool> where Value == T? {
-        .init(get: {
-            wrappedValue != nil
-        }, set: { _ in
-            wrappedValue = nil
-        })
     }
 }
 

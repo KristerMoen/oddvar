@@ -24,7 +24,8 @@ enum Page: String, CaseIterable, Equatable, RandomAccessCollection {
 }
 
 /**
- This Swift class represents a ViewModel for managing a container of items. It allows loading items from storage and an API, saving items with favorited status, and dynamically updating the displayed items and pages based on user interactions. The ViewModel is designed for SwiftUI and utilizes asynchronous programming to handle data retrieval and updates.
+ This Swift class represents a ViewModel for managing a container of items. It allows loading items from storage and an API, saving items with favorited status, and dynamically updating the displayed items and pages based on user interactions.
+ The ViewModel is designed for SwiftUI and utilizes asynchronous programming to handle data retrieval and updates.
 */
 
 public class PickerContainerViewModel: ObservableObject {
@@ -55,6 +56,7 @@ public class PickerContainerViewModel: ObservableObject {
                     } else {
                         self.items = storedItems
                     }
+                    
                     let filtered = self.items.filter { $0.favorited == true }
                     self.pages = filtered.isEmpty ? [.nonFiltered] : [.nonFiltered, .filtered]
                     self.isLoading = false
@@ -87,7 +89,6 @@ public class PickerContainerViewModel: ObservableObject {
                         return $0
                     }
                 try await enviroment.store.save(items: mutateItems.isEmpty ? self.items : mutateItems)
-               
                 
                 DispatchQueue.main.async {
                     let filtered = mutateItems.filter { $0.favorited == true }

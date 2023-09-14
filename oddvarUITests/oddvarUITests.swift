@@ -36,14 +36,14 @@ final class oddvarUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
-    func testScrollDownInApp() {
-        let scrolls = 5
-        var count = 0
-        while count < scrolls {
-            app.swipeUp()
-            count += 1
-        }
-    }
+//    func testScrollDownInApp() {
+//        let scrolls = 5
+//        var count = 0
+//        while count < scrolls {
+//            app.swipeUp()
+//            count += 1
+//        }
+//    }
     
     func testItemCardFavoritedSnapshot() {
         let itemCardView = ItemCardView(

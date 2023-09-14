@@ -84,7 +84,7 @@ public struct ItemCardView: View {
 
 
 struct ItemCardView_Previews: PreviewProvider {
-    @State static var value = false
+    @State static var value = true
     
     static var previews: some View {
         ItemCardView(

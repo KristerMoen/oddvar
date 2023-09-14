@@ -60,10 +60,3 @@ struct ItemListView_Previews: PreviewProvider {
         })
     }
 }
-
-
-public struct LolListView: View {
-    public var body: some View {
-        Text("LOL")
-    }
-}
