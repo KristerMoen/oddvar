@@ -84,16 +84,26 @@ public struct ItemCardView: View {
 
 
 struct ItemCardView_Previews: PreviewProvider {
-    @State static var value = false
-    
+    @State static var value = true
+    @State static var value2 = false
     static var previews: some View {
-        ItemCardView(
-            imageURL: ItemGroup.mock.items?.first?.image?.imageUrl,
-            imageScalable: true,
-            location: "BirkebeinerLand",
-            description: "Stol selges med forbehold om kattehår",
-            price: "2999,-",
-            isFavorite: $value
-        )
+        List{
+            ItemCardView(
+                imageURL: ItemGroup.mock.items?.first?.image?.imageUrl,
+                imageScalable: true,
+                location: "BirkebeinerLand",
+                description: "Stol selges med forbehold om kattehår",
+                price: "2999,-",
+                isFavorite: $value
+            )
+            ItemCardView(
+                imageURL: ItemGroup.mock.items?.last?.image?.imageUrl,
+                imageScalable: true,
+                location: "Oslo",
+                description: "Stol selges med forbehold om kattehår",
+                price: "455,-",
+                isFavorite: $value2
+            )
+        }
     }
 }

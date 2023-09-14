@@ -73,7 +73,7 @@ final class oddvarUITests: XCTestCase {
     
     func testPickerContainerView() {
         let pickerView = PickerContainerView(enviroment: .init(apiClient: .demo, oddvarState: OddvarState()))
-        assertSnapshot(matching: pickerView, as: .image, record: record)
+        assertSnapshot(matching: pickerView, as: .image, record: false)
     }
 
 }

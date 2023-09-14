@@ -9,6 +9,7 @@ import Foundation
 import Combine
 import SwiftUI
 import OddvarApi
+import Network
 
 // Enum for switching between all and filtered items in a Picker
 enum Page: String, CaseIterable, Equatable, RandomAccessCollection {
@@ -28,6 +29,7 @@ enum Page: String, CaseIterable, Equatable, RandomAccessCollection {
 */
 
 public class PickerContainerViewModel: ObservableObject {
+    
     @Published var items: [Item] = []
     @Published var selectedPage: Page = .nonFiltered
     @Published var pages: [Page] = [.nonFiltered]
@@ -44,13 +46,13 @@ public class PickerContainerViewModel: ObservableObject {
             do {
                 self.isLoading = true
                 let storedItems = try await enviroment.store.load()
-                let adItems = try await enviroment.apiClient.getOddvarItems()
-                
+                let adItems = Reachability().isConnectedToNetwork() ? try await enviroment.apiClient.getOddvarItems().items : []
+    
                 DispatchQueue.main.async {
                     // Checks if it's stored items on disk
-                    // TODO: Should check for duplicate items
-                    if storedItems.isEmpty || adItems.items?.count ?? 0 > storedItems.count {
-                        self.items = adItems.items ?? []
+                    // TODO: Should check for duplicate items and be added to an repo/datasource
+                    if storedItems.isEmpty || adItems?.count ?? 0 > storedItems.count {
+                        self.items = adItems ?? []
                         self.saveItem()
                     } else {
                         self.items = storedItems

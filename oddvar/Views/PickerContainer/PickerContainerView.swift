@@ -76,17 +76,6 @@ public struct PickerContainerView: View {
     }
 }
 
-
-extension Binding {
-    func isNotNil<T>() -> Binding<Bool> where Value == T? {
-        .init(get: {
-            wrappedValue != nil
-        }, set: { _ in
-            wrappedValue = nil
-        })
-    }
-}
-
 /**
  This allows you to preview `PickerContainerView` with sample data and dependencies.
  - Returns: A preview of `PickerContainerView` with a predefined environment.
@@ -94,6 +83,6 @@ extension Binding {
  */
 struct PickerContainerView_Previews: PreviewProvider {
     static var previews: some View {
-        PickerContainerView(enviroment: .init(apiClient: .demoWithError, oddvarState: OddvarState()))
+        PickerContainerView(enviroment: .init(apiClient: .demoWithManyFavorites, oddvarState: OddvarState()))
     }
 }

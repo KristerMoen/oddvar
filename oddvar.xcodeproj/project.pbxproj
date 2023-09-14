@@ -25,6 +25,7 @@
 		7C620AA42AAE6EFE00239261 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB7C80B2AABBF5600920ECC /* Constants.swift */; };
 		7C620AA52AAE6F0900239261 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB7C7E02AABB87000920ECC /* Preview Assets.xcassets */; };
 		7C620AA72AAE6F3700239261 /* OddvarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB7C7D92AABB86F00920ECC /* OddvarApp.swift */; };
+		7C8DC7132AB2F5C80046ED25 /* Binding+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8DC7112AB2F5AD0046ED25 /* Binding+extension.swift */; };
 		7CB0D39B2AAF974E0054BFFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB7C7DD2AABB87000920ECC /* Assets.xcassets */; };
 		7CB0D39D2AAFAFE50054BFFF /* TextImageOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB0D39C2AAFAFE50054BFFF /* TextImageOverlay.swift */; };
 		7CB0D3A12AAFBF650054BFFF /* after+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB0D3A02AAFBF650054BFFF /* after+Tests.swift */; };
@@ -90,6 +91,7 @@
 		7C620A8F2AAE6E5700239261 /* oddvarFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = oddvarFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C620A912AAE6E5700239261 /* oddvarFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = oddvarFramework.h; sourceTree = "<group>"; };
 		7C620A922AAE6E5700239261 /* oddvarFramework.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = oddvarFramework.docc; sourceTree = "<group>"; };
+		7C8DC7112AB2F5AD0046ED25 /* Binding+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+extension.swift"; sourceTree = "<group>"; };
 		7CB0D39C2AAFAFE50054BFFF /* TextImageOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextImageOverlay.swift; sourceTree = "<group>"; };
 		7CB0D3A02AAFBF650054BFFF /* after+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "after+Tests.swift"; sourceTree = "<group>"; };
 		7CB7C7D62AABB86F00920ECC /* oddvar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oddvar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -252,6 +254,7 @@
 			children = (
 				7CB7C8072AABBB7600920ECC /* DepenencyEnviroment.swift */,
 				7CB7C80B2AABBF5600920ECC /* Constants.swift */,
+				7C8DC7112AB2F5AD0046ED25 /* Binding+extension.swift */,
 				7CB7C7DD2AABB87000920ECC /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -463,6 +466,7 @@
 				7C620A932AAE6E5700239261 /* oddvarFramework.docc in Sources */,
 				7C620AA12AAE6E9E00239261 /* DepenencyEnviroment.swift in Sources */,
 				7C620AA32AAE6ED000239261 /* OddvarState.swift in Sources */,
+				7C8DC7132AB2F5C80046ED25 /* Binding+extension.swift in Sources */,
 				7C620A9D2AAE6E8500239261 /* ItemListView.swift in Sources */,
 				7C620AA42AAE6EFE00239261 /* Constants.swift in Sources */,
 			);
